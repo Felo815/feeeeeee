@@ -185,4 +185,48 @@ nav h1 {
     margin: 10px 0;
     font-size: 32px;
     color: var(--primary);
+
+}/* ========== MOBILE FIX ========== */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .products {
+        gap: 12px; /* يقلل المسافة بين الكروت */
+    }
+
+    .product {
+        height: 260px; /* يقلل طول الكارت */
+        border-radius: 12px;
+    }
+
+    .product img {
+        height: 140px;
+        padding: 8px;
+    }
+
+    .product-info h3 {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 13px;
+    }
+
+    .social {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .social a {
+        font-size: 26px;
+        margin: 6px 0;
+    }
 }
