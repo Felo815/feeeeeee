@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bags Store</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <span class="menu-btn" onclick="toggleMenu()">☰</span>
+    <h1>Fashion Store</h1>
+    <span class="dark-btn" onclick="toggleDark()">🌙</span>
+</nav>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>Menu</h2>
+
+    <a href="index.html">👟 Shoes</a>
+    <a href="bags.html">👜 Bags</a>
+
+    <!-- PRICE FILTER -->
+    <div class="filter">
+        <h3>Filter by Price</h3>
+        <input type="number" id="priceInput" placeholder="Max Price">
+        <button onclick="filterPrice()">Apply</button>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+    <h2 class="title"> Bags</h2>
+
+    <div class="products">
+        <div class="product" data-price="850">
+            <img src="شنطه.webp" alt="Bag">
+            <div class="product-info">
+                <h3>Hand Bag</h3>
+                <p class="price">850 EGP</p>
+            </div>
+        </div>
+
+        <div class="product" data-price="1100">
+            <img src="شنطه2.webp" alt="Bag">
+            <div class="product-info">
+                <h3>Backpack</h3>
+                <p class="price">1100 EGP</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SOCIAL MEDIA -->
+<div class="social">
+    <!-- WhatsApp -->
+    <a href="https://wa.me/201234567890?text=Hello%20I%20want%20to%20ask%20about%20bags" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://facebook.com/YourStorePage" target="_blank">
+        <i class="fab fa-facebook"></i>
+    </a>
+</div>
+
+</body>
+</html>

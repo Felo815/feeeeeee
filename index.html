@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shoes Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<nav>
+    <span class="menu-btn" onclick="toggleMenu()">☰</span>
+    <h1>محل عاطف منسي </h1>
+    <span class="dark-btn" onclick="toggleDark()">🌙</span>
+</nav>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>Menu</h2>
+    <a href="index.html">👟 Shoes</a>
+    <a href="bags.html">👜 Bags</a>
+
+    <div class="filter">
+        <h3>Filter by Price</h3>
+        <input type="number" id="priceInput" placeholder="Max Price">
+        <button onclick="filterPrice()">Apply</button>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="title">Latest Shoes</h2>
+
+    <div class="products">
+        <div class="product" data-price="1200">
+            <img src="shopping.webp">
+            <div class="product-info">
+                <h3>Sport Shoes</h3>
+                <p class="price">1200 EGP</p>
+            </div>
+        </div>
+
+        <div class="product" data-price="900">
+            <img src="shopping (1).webp">
+            <div class="product-info">
+                <h3>Casual Shoes</h3>
+                <p class="price">900 EGP</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SOCIAL -->
+<div class="social">
+    <a href="https://wa.me/201006839607?text=Hello%20I%20want%20to%20ask%20about%20a%20product" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.facebook.com/share/18GAFRc4ii/?mibextid=wwXIfr" target="_blank">
+        <i class="fab fa-facebook"></i>
+    </a>
+</div>
+
+</body>
+</html>
